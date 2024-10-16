@@ -31,13 +31,15 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main
     kubectl apply -f bootstrap-deployment.yaml
 
 ## Create Service
-kubectl apply -f bootstrap-service.yaml
+    kubectl apply -f bootstrap-service.yaml
 
 ## Create Ingress
-kubectl apply -f bootstrap-ingress.yaml
+    kubectl apply -f bootstrap-ingress.yaml
 ## Access using below URL
 
 http://localhost/bootstrap/
 
 
-**Ref:** https://kind.sigs.k8s.io/docs/user/ingress/
+**References:** 
+
+https://kind.sigs.k8s.io/docs/user/ingress/
