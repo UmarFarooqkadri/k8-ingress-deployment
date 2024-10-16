@@ -1,6 +1,5 @@
 ## Create a Kind Cluster using below command
 
-```bash
     cat <<EOF | kind create cluster --config=-
     kind: Cluster
     apiVersion: kind.x-k8s.io/v1alpha4
@@ -20,7 +19,7 @@
         hostPort: 443
         protocol: TCP
     EOF
-```
+
 
 ## Install Nginx 
 
