@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: bootstrap-service
+spec:
+  selector:
+    app: bootstrap
+  ports:
+  # Default port used by the image
+  - port: 80

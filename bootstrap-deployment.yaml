@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bootstrap-deployment
+  labels:
+    app: bootstrap
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bootstrap
+  template:
+    metadata:
+      labels:
+        app: bootstrap
+    spec:
+      containers:
+      - name: k8-bootstrap
+        # image: http://gcr.io/google-samples/kubernetes-bootcamp:v1
+        image: nginx
+        ports:
+        - containerPort: 80
