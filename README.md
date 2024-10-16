@@ -24,10 +24,12 @@
 
 ## Install Nginx 
 
+```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/kind/deploy.yaml
+```
 
 ## Create deployment
-kubectl apply -f bootstrap-deployment.yaml
+    kubectl apply -f bootstrap-deployment.yaml
 
 ## Create Service
 kubectl apply -f bootstrap-service.yaml
